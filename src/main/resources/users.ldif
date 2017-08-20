@@ -1,0 +1,63 @@
+dn: ou=groups,dc=virtusa,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=virtusa,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=virtusa,ou=people,dc=virtusa,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Jim Beam
+sn: Beam
+uid: viswa
+userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=
+
+dn: uid=eswar,ou=people,dc=virtusa,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Jim Beam
+sn: Beam
+uid: eswar
+userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=
+
+dn: uid=virtusa,ou=people,dc=virtusa,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Jim Beam
+sn: Beam
+uid: bala
+userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=
+
+dn: uid=admin,ou=people,dc=virtusa,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Jim Beam
+sn: Beam
+uid: admin
+userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=
+
+dn: cn=admin,ou=groups,dc=virtusa,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: admin
+member: uid=admin,ou=people,dc=virtusa,dc=com
+
+dn: cn=user,ou=groups,dc=virtusa,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: user
+member: uid=viswa,ou=people,dc=virtusa,dc=com,uno=1
+member: uid=eswar,ou=people,dc=virtusa,dc=com,uno=2
+member: uid=bala,ou=people,dc=virtusa,dc=com,uno=3
